@@ -1,0 +1,7 @@
+.header-bg{
+    background-image: url("../../../img/header-bg.jpg");
+    height: 700px;
+    background-size: cover;
+    opacity: .9;
+    
+}

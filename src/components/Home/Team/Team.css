@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--pink-light);
+}
+.team{
+    padding: 80px 0px;
+    min-height: 100vh;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.title-section{
+    text-align: center;
+    width: 100%;
+}
+.title-section h2{
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+}
+.title-section h2 span{
+    color: #004976;
+    font-size: 45px;
+}
+.team-item img{
+    width: 100%;
+    vertical-align: middle;
+}
+.team-item{
+    width: calc((100% / 3) - 30px);
+    margin: 0 15px 30px;
+    position: relative;
+    transition: box-shadow 0.5s ease;
+}
+.team-item:hover{
+    box-shadow: 0 0 15px #b7a6ce;
+}
+.team-item img{
+    width: calc(100% - 60px) !important;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.5s ease;
+}
+.team-item:hover img{
+    transform: translateX(60px);
+}
+.team-item h3{
+    position: absolute;
+    background-color: #004976;
+    right: 0;
+    bottom: 15px;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: capitalize;
+    z-index: 2;
+    transition: right 0.5s ease;
+}
+.team-item:hover h3{
+    right: 15px;
+}
+.team-item h3 span{
+    display: block;
+    font-weight: 400;
+    color: #F7C355;
+    font-size: 15px;
+}
+.team-item .social-links{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.team-item:hover .social-links{
+    transform: translateX(0%);
+    opacity: 1;
+}
+.team-item .social-links a{
+    display: block;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    margin: 2px;
+    font-size: 16px;
+    border: 1px solid #004976;
+    color: #004976;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.team-item .social-links a:hover{
+    color: #F7C355;
+    border-color: #F7C355;
+}
+.copy-right{
+    text-align: center;
+    padding: 10px 0px;
+}
+.copy-right span{
+    color: var(--pink);
+}
+@media(max-width:991px){
+    .team-item{
+        width: calc(50% - 30px);
+    }
+}
+@media(max-width: 575px){
+    .team-item{
+        width: calc(100% - 30px);
+    }
+}

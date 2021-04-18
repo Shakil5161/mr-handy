@@ -1,0 +1,32 @@
+ul , li{
+    list-style-type: none;
+    padding: 0px;
+}
+.footer-link a{
+ text-decoration: none;
+ color: white;
+ font-size: 10px;
+}
+.footer-bg{
+    background-color: #004976;
+}
+.footer-icon{
+    font-size: 15px;
+    color: #F7C355;
+    border: 1px solid #F7C355;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding: 10px;
+}
+.footer-btn button{
+    background: #004976; 
+    border:  1px solid #F7C355;
+}
+.footer-btn button:hover{
+    background: #F7C355; 
+}
+.footer-icon:hover{
+    background: #F7C355; 
+    border: 1px solid #F7C355;
+    color: #fff;
+}

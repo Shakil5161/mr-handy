@@ -1,0 +1,9 @@
+.review-bg{
+    background-image: url('../../../img/footer-bg.png');
+    background-size: cover;
+}
+.review-text p{
+    font-size: 12px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #F7C355;
+}
